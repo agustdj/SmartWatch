@@ -1,0 +1,27 @@
+.modal-content {
+  animation: zoomIn 0.25s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.input-group-text {
+  background: #fff;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(3px);
+}
