@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 const app = require("./app");
 const cors = require("cors");
-import { GoogleGenerativeAI } from "@google/generative-ai";
+const { GoogleGenerativeAI } = require("@google/generative-ai");
+const dns = require("dns");
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
 mongoose
   .connect(process.env.MONGO_URI)
