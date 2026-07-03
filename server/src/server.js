@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const app = require("./app");
-import cors from "cors";
+const cors = require("cors");
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 mongoose
